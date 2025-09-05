@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playme Games</title>
+<link rel="icon" type="image/x-icon" href="./favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css">
+    
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/slider.css" rel="stylesheet">
+    <script src="./node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="./node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/slider.js"></script>
+</head>
+<body>
+    <header class="container-fluid py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="./img/playmegames-logo.png" alt="Playme Games" class="logo">
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="bi bi-sun-fill light-icon"></i>
+                <i class="bi bi-moon-fill dark-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="slider">
+        <div class="list">
+          <div class="item active">
+            <div class="image" style="--url: url('../img/hero.jpg')"></div>
+            <div class="content">
+              <h2>1000+ GAMES</h2>
+              <p>
+                Instant access to our vast collection of games
+              </p>
+              <p>From casual to action, we have it all</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image" style="--url: url('../img/hero2.jpg')"></div>
+            <div class="content">
+              <h2>PLAY INSTANTLY</h2>
+              <p>
+                No downloads required - just click and play
+              </p>
+              <p>Start gaming in seconds, not hours</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image" style="--url: url('../img/hero3.jpg')"></div>
+            <div class="content">
+              <h2>CROSS PLATFORM</h2>
+              <p>
+                Play on any device with a browser
+              </p>
+              <p>Seamlessly switch between desktop and mobile</p>
+            </div>
+          </div>
+        </div>
+        <div class="arrows">
+          <button id="prev">
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 12h14M5 12l4-4m-4 4 4 4"
+              />
+            </svg>
+          </button>
+          <button id="next">
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 12H5m14 0-4 4m4-4-4-4"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+    <section class="device-section countries py-5">
+        <div class="container text-center section-heading">
+            <h2>Any Device! Any time!</h2>
+            <h4>Subscribe to our service and have fun on any device at any time!</h4>
+        </div>
+        <div class="container text-center section-heading">
+            <h4 style="color: var(--primary);">Select Your Country</h4>
+            <div data-gsap="stagger" class="row g-4 mt-4">
+                <!-- <div class="col-6 col-md-3">
+                    <a href="./ireland.html" class="country-link">
+                        <span class="fi fi-ie flag-icon"></span>
+                        <h5>Ireland</h5>
+                    </a>
+                </div> -->
+                <div class="col-6 col-md-3">
+                    <a href="./si.html" class="country-link">
+                        <span class="fi fi-si flag-icon"></span>
+                        <h5>Slovenia</h5>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="./ro.html" class="country-link">
+                        <span class="fi fi-ro flag-icon"></span>
+                        <h5>Romania</h5>
+                    </a>
+                </div>
+                <!-- <div class="col-6 col-md-3">
+                    <a href="./finland.html" class="country-link">
+                        <span class="fi fi-fi flag-icon"></span>
+                        <h5>Finland</h5>
+                    </a>
+                </div> -->
+                <div class="col-6 col-md-3">
+                    <a href="./uae.html" class="country-link">
+                        <span class="fi fi-ae flag-icon"></span>
+                        <h5>UAE</h5>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="./ba.html" class="country-link">
+                        <span class="fi fi-ba flag-icon"></span>
+                        <h5>Bosnia and Herzegovina</h5>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="./fr.html" class="country-link">
+                        <span class="fi fi-fr flag-icon"></span>
+                        <h5>France</h5>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="./pt.html" class="country-link">
+                        <span class="fi fi-pt flag-icon"></span>
+                        <h5>Portugal</h5>
+                    </a>
+                </div>
+                <!-- <div class="col-6 col-md-3">
+                    <a href="./sweden.html" class="country-link">
+                        <span class="fi fi-se flag-icon"></span>
+                        <h5>Sweden</h5>
+                    </a>
+                </div> -->
+                <!-- <div class="col-6 col-md-3">
+                    <a href="./greece.html" class="country-link">
+                        <span class="fi fi-gr flag-icon"></span>
+                        <h5>Greece</h5>
+                    </a>
+                </div> -->
+                <!-- <div class="col-6 col-md-3">
+                    <a href="./denmark.html" class="country-link">
+                        <span class="fi fi-dk flag-icon"></span>
+                        <h5>Denmark</h5>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages py-5">
+        <div class="container text-center section-heading" data-gsap="from-bottom">
+            <h2>Our Advantages</h2>
+            <h5>We have all the best games our portals that you can play online</h5>
+        </div>
+        <div class="container">
+            <div class="row g-4" data-gsap="stagger">
+                <div class="col-md-4">
+                    <div class="advantage-item">
+                        <h4><i class="bi bi-fullscreen me-2"></i>Full Screen</h4>
+                        <p>Experience your favorite games in immersive full-screen mode. No distractions, just pure gaming enjoyment with crystal clear graphics and smooth performance.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="advantage-item">
+                        <h4><i class="bi bi-globe me-2"></i>Online</h4>
+                        <p>Access our vast library of 1000+ games instantly through your browser. Try before you download - play online first and only download the games you truly love.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="advantage-item">
+                        <h4><i class="bi bi-badge-ad me-2"></i>No Ads</h4>
+                        <p>Enjoy uninterrupted gaming sessions without any annoying advertisements. We believe in providing a clean, premium gaming experience for all our users.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content" data-gsap="from-bottom">
+                <i class="bi bi-envelope-paper-heart contact-icon"></i>
+                <h5>Feel free to contact us</h5>
+                <a href="mailto:support@playme-games.com">
+                    support@playme-games.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4">
+        <div class="container text-center">
+            <img src="./img/playmegames-logo.png" alt="Playme Games" class="logo mb-3">
+            <p class="mb-0">© All Rights Reserved. Playme Games.</p>
+        </div>
+    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

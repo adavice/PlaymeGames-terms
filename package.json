@@ -1,0 +1,15 @@
+{
+  "name": "project-web-gsap",
+  "version": "1.0.0",
+  "description": "A web project using HTML, CSS, Bootstrap 5, and GSAP for animations.",
+  "main": "js/main.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "gsap": "^3.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
